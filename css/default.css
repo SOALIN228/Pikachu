@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.code-wrapper {
+    flex: 1;
+    height: 50%;
+    padding: 10px;
+    background-color: #f6f9fb;
+}
+
+.preview-wrapper {
+    flex: 1;
+    height: 50%;
+}
+
+#code {
+    overflow: auto;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.wrapper {
+    width: 100%;
+    height: 165px;
+    position: relative;
+}
+
+.eye.left {
+    right: 50%;
+    margin-right: 90px;
+}
+
+.face.left {
+    right: 50%;
+    margin-right: 116px;
+}
+
+.lowerLip-wrapper {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 130px;
+    overflow: hidden;
+}
+
+.actions {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.actions > button {
+    margin: 10px;
+    padding: 8px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: Crimson;
+}
+
+.actions > button.active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+}
